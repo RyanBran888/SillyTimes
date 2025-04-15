@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "Super Silly Stuff!",
+    "version": "1.0",
+    "description": "makes your web experience... silly!",
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": "bleh.png"
+    },
+    "permissions": ["activeTab"],
+    "background": {
+        "service_worker": "background.js"
+    }
+}

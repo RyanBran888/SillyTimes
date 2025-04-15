@@ -8,8 +8,8 @@
         "default_icon": "bleh.png"
     },
     "permissions": [],
-    "host_permissions": ["<all_url>"],
-    "conent_scripts": [
+    "host_permissions": ["<all_urls>"],
+    "content_scripts": [
         {
             "matches": ["<all_urls>"],
             "js": ["content.js"]

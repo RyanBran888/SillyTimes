@@ -7,7 +7,7 @@
         "default_popup": "popup.html",
         "default_icon": "bleh.png"
     },
-    "permissions": ["scriping", "tabs"],
+    "permissions": ["scripting", "tabs"],
     "host_permissions": ["<all_urls>"],
     "content_scripts": [
         {

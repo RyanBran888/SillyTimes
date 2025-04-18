@@ -14,6 +14,21 @@ function replace() {
         }
     }
 }
+function sillyWitIt()
+{
+    document.body.style.fontFamily = `"Comic Sans MS", cursive, sans-serif`;
+    document.body.style.background = `linear-gradient(270deg, red, orange, yellow, green, blue, purple, pink)`;
+    document.body.style.backgroundSize = "1400% 1400%";
+    document.body.style.animation = "rainbowFlow 10s ease infinite";
+    const style = document.createElement('style');
+    style.textContent `
+    @keyframes rainbowFlow {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position 0% 50% } 
+        }`;
+        document.head.appendChild(style);
+}
 function meow(img)
 {
     const replacer = new Image();
@@ -30,6 +45,6 @@ function r(min, max) {
     return Math.floor(Math.random() * (max - min) + min);
 }
 replace();
-
+sillyWitIt();
 const observer = new MutationObserver(replace);
 observer.observe(document.body, {childList: true, subtree: true });

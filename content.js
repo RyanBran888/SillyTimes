@@ -21,7 +21,7 @@ function sillyWitIt()
     * {
         font-family: "Comic Sans MS", cursive, sans-serif !important;    
     }
-    body {
+    html, body {
         background:  linear-gradient(270deg, red, orange, yellow, green, blue, purple, pink);
         background-size: 1400% 1400%;
         animation: rainbowFlow 10s ease infinite;
@@ -29,8 +29,9 @@ function sillyWitIt()
     @keyframes rainbowFlow {
         0% { background-position: 0% 50%; }
         50% { background-position: 100% 50%; }
-        100% { background-position 0% 50% } 
-        }`;
+        100% { background-position: 0% 50%; } 
+    }
+    `;
         document.head.appendChild(style);
 }
 function meow(img)

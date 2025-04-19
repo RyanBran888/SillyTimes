@@ -30,6 +30,6 @@ function starting() {
     setInterval(() => {
         const delay = Math.floor(Math.random() * 8000) + 4000;
         setTimeout(forcedSilly, delay);
-    }, 5000);
+    }, 15000);
 }
 starting();

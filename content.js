@@ -5,6 +5,7 @@ const bob = [
 "https://hc-cdn.hel1.your-objectstorage.com/s/v3/5162a121bc7f55c93243c3f5963e742d6e5e78a6_image.png",
 "https://raw.githubusercontent.com/RyanBran888/SillyTimes/main/bleh.png",
 "https://hc-cdn.hel1.your-objectstorage.com/s/v3/c5b9b567e082e04351c86f75c036ee2df86f5234_download.jpg"];
+
 function replace() {
     const images = document.getElementsByTagName("img");
     for(let img of images) {
@@ -14,6 +15,7 @@ function replace() {
         }
     }
 }
+flyflyaway();
 function sillyWitIt()
 {
     const style = document.createElement('style');

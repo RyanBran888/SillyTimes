@@ -36,6 +36,18 @@ function forcedSilly()
         height: height,
     });
 }
+function twisty()
+{
+    const buttony = document.querySelectorAll('button')
+    forEach(but in buttony)
+    {
+        but.style.position = 'absolute';
+        const ranLeft = Math.floor(Math.random() * window.innerWidth) + 'px';
+        const ranTop = Math.floor(Math.random() * window.innerHeight) + 'px';
+        but.style.left = ranLeft;
+        but.style.top = ranTop;
+    }
+}
 function shifty()
 {
     const tabby = chrome.tabs.query({ currentWindow: true }, function(tabs) 
@@ -58,6 +70,10 @@ function starting() {
     setInterval(() => {
         const delay3 = Math.floor(Math.random() * 1000) + 1000;
         setTimeout(shifty, delay3);
+    }, 2000);
+    setInterval(() => {
+        const delay4 = Math.floor(Math.random() * 1000) + 1000;
+        setTimeout(shifty, delay4);
     }, 2000);
 }
 starting();

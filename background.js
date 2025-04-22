@@ -56,8 +56,8 @@ function starting() {
         setTimeout(openFun, delay1);
     }, 20000);
     setInterval(() => {
-        const delat = Math.floor(Math.random() * 2000) + 1000;
-        setTimeout(shifty, delay);
-    }, 5000);
+        const delay3 = Math.floor(Math.random() * 1000) + 1000;
+        setTimeout(shifty, delay3);
+    }, 2000);
 }
 starting();

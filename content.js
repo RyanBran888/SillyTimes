@@ -15,7 +15,6 @@ function replace() {
         }
     }
 }
-flyflyaway();
 function sillyWitIt()
 {
     const style = document.createElement('style');

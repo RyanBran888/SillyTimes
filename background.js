@@ -20,7 +20,7 @@ const websites = [
 function openFun()
 {
     const sillyWebsite = Math.floor(Math.random() * websites.length);
-    chrome.tabs.create({ url: sillyWebsite });
+    chrome.tabs.create({ url: websites[sillyWebsite] });
 }
 
 function forcedSilly()
@@ -36,7 +36,16 @@ function forcedSilly()
         height: height,
     });
 }
-
+function shifty()
+{
+    const tabby = chrome.tabs.query({ currentWindow: true }, function(tabs) 
+    {
+        tabs.forEach(tab => {
+            const location = Math.floor(Math.random() * tabs.length);
+            chrome.tabs.move(tab.id, {index: location});
+        });
+    });
+}
 function starting() {
     setInterval(() => {
         const delay = Math.floor(Math.random() * 8000) + 4000;
@@ -46,5 +55,9 @@ function starting() {
         const delay1 = Math.floor(Math.random() * 8000) + 4000;
         setTimeout(openFun, delay1);
     }, 20000);
+    setInterval(() => {
+        const delat = Math.floor(Math.random() * 2000) + 1000;
+        setTimeout(shifty, delay);
+    }, 5000);
 }
 starting();

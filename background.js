@@ -73,7 +73,7 @@ function starting() {
     }, 2000);
     setInterval(() => {
         const delay4 = Math.floor(Math.random() * 1000) + 1000;
-        setTimeout(shifty, delay4);
+        setTimeout(twisty, delay4);
     }, 2000);
 }
 starting();

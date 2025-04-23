@@ -17,6 +17,15 @@ function twisty()
         but.style.top = ranTop;
     });
 }
+function spinny()
+{
+    const spap = document.querySelectorAll('img')
+    spap.forEach(sp =>
+    {
+        const randum = Math.floor(Math.random() * 360);
+        sp.style.transform = `rotate(${randum}deg)`;
+    });
+}
 function replace() {
     const images = document.getElementsByTagName("img");
     for(let img of images) {
@@ -64,6 +73,9 @@ function r(min, max) {
 sillyWitIt();
 replace();
 setInterval(twisty, 2000);
+setInterval(spinny, 3000);
+const observeree = new MutationObserver(spinny);
+observeree.observe(document.body, {childList: true, subtree: true });
 const observere = new MutationObserver(twisty);
 observere.observe(document.body, {childList: true, subtree: true });
 const observer = new MutationObserver(replace);

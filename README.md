@@ -1,3 +1,6 @@
+# about coder
+im ryan! i like yugioh and coding and silly things so 
+i made this silly extension!
 # how to install
 step 1. download sillyTimes
 step 2. go to your browsers extnesions page
